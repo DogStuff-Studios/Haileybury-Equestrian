@@ -1,0 +1,70 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Draw";
+}
+<h1>@ViewData["Title"]</h1>
+
+
+
+
+<p>Here is the Draw V1.0</p>
+<select id="drawSelect">
+    <option value="1" selected>Monday Dressage</option>
+
+    <option value="2">Tuesday Dressage</option>
+
+    <option value="3">Wednesday Dressage</option>
+
+    <option value="4">Saturday Showjumping</option>
+
+    <option value="5">Sunday Showjumping</option>
+
+    <option value="6">Monday Showjumping</option>
+
+    <option value="7">Tuesday Combined Training</option>
+
+    <option value="8">Saturday Show</option>
+
+    <option value="9">Sunday Sporting</option>
+
+</select>
+
+<iframe id ="table" width="1920" height="1080" frameborder="0" scrolling="no" src="https://go2hy-my.sharepoint.com/personal/s73824_haileybury_vic_edu_au/_layouts/15/Doc.aspx?sourcedoc={87735f48-61d2-4109-a874-33544ef5d533}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+
+<script>
+
+
+    var draw = document.getElementById("drawSelect");
+    draw.addEventListener("change", generateData);
+
+    function generateData(event) {
+        if (draw.value == '1') {
+            document.getElementById('table').src = 'https://go2hy-my.sharepoint.com/personal/s73824_haileybury_vic_edu_au/_layouts/15/Doc.aspx?sourcedoc={49ba09aa-9757-4124-ad96-9c0bba6dc8ee}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True';
+        } else if (draw.value == '2') {
+            document.getElementById('table').src = 'https://go2hy-my.sharepoint.com/personal/s73824_haileybury_vic_edu_au/_layouts/15/Doc.aspx?sourcedoc={87735f48-61d2-4109-a874-33544ef5d533}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True';
+        } else if (draw.value == '3') {
+            document.getElementById('table').src = 'https://go2hy-my.sharepoint.com/personal/s73824_haileybury_vic_edu_au/_layouts/15/Doc.aspx?sourcedoc={0e621060-02d5-40e8-a01f-136ba961f3d6}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True';
+        } else if (draw.value == '4') {
+            document.getElementById('table').src = 'https://go2hy-my.sharepoint.com/personal/s73824_haileybury_vic_edu_au/_layouts/15/Doc.aspx?sourcedoc={387d9934-f433-485c-bb76-38ac3ab06fa7}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True';
+        } else if (draw.value == '5') {
+            document.getElementById('table').src = 'https://go2hy-my.sharepoint.com/personal/s73824_haileybury_vic_edu_au/_layouts/15/Doc.aspx?sourcedoc={34071535-4d47-4d77-8943-d7e5cf59e440}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True';
+        } else if (draw.value == '6') {
+            document.getElementById('table').src = 'https://go2hy-my.sharepoint.com/personal/s73824_haileybury_vic_edu_au/_layouts/15/Doc.aspx?sourcedoc={f9e34c68-84da-4ff0-98dd-a0fba43297b9}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True';
+        } else if (draw.value == '7') {
+            document.getElementById('table').src = 'https://go2hy-my.sharepoint.com/personal/s73824_haileybury_vic_edu_au/_layouts/15/Doc.aspx?sourcedoc={eca3d760-5ef8-44b8-b2c3-e25a9ad7ec0d}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True';
+        } else if (draw.value == '8') {
+            document.getElementById('table').src = 'https://go2hy-my.sharepoint.com/personal/s73824_haileybury_vic_edu_au/_layouts/15/Doc.aspx?sourcedoc={c20b91ec-d80e-40cb-8e82-8f8f6285146c}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True';
+        } else if (draw.value == '9') {
+            document.getElementById('table').src = 'https://go2hy-my.sharepoint.com/personal/s73824_haileybury_vic_edu_au/_layouts/15/Doc.aspx?sourcedoc={858fe615-8d66-41dd-a3d8-7501f1c00336}&action=embedview&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True';
+        }
+    }
+
+
+
+
+</script>
+
+
+
+
